@@ -49,6 +49,40 @@
   </style>
 </head>
 <body>
+<h2>Cuteness Meter 💖</h2>
+
+<div class="meter">
+  <div class="meter-fill" id="cuteFill">0%</div>
+</div>
+
+<style>
+.meter {
+  width: 80%;
+  background: #ddd;
+  border-radius: 20px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.meter-fill {
+  height: 30px;
+  width: 0%;
+  background: linear-gradient(to right, #ff66a3, #ff1493);
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  transition: width 2s ease;
+}
+</style>
+
+<script>
+window.onload = function() {
+  var fill = document.getElementById("cuteFill");
+  fill.style.width = "130%";
+  fill.innerHTML = "130% 💖";
+}
+</script>
 
   <h1>My Beautiful Wifey 💕</h1>
 
