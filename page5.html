@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>You Are My Everything ❤️</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  overflow: hidden;
+}
 
+h1 {
+  margin-top: 80px;
+  font-size: 45px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px white; }
+  to { text-shadow: 0 0 30px #ff0066; }
+}
+
+p {
+  font-size: 22px;
+  margin: 30px;
+}
+
+.final {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: white;
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(100vh); }
+}
+</style>
+</head>
+
+<body>
+
+<h1>hey sexy girl ❤️</h1>
+
+<p>
+You are my smile, my peace, my happiness,  
+and the best thing that ever happened to me.  
+Every moment with you is special. bro apan pune la lay maje karu yarrrr cant stop thinking
+and pakka mhanje pakka me tula disoppoint nay krnr
+and khup sare kisses hugs and vo sab harkate karenge 
+</p>
+
+<div class="final">
+Happy Birthday, My Beautiful Wifey ❤️
+</div>
+
+<script>
+for (let i = 0; i < 100; i++) {
+  let confetti = document.createElement("div");
+  confetti.classList.add("confetti");
+  confetti.style.left = Math.random() * 100 + "vw";
+  confetti.style.animationDelay = Math.random() * 5 + "s";
+  document.body.appendChild(confetti);
+}
+</script>
+
+</body>
+</html>
