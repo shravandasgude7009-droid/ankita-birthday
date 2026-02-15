@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Purple Paradise 💜</title>
 
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  color: white;
+  background: url('https://images.unsplash.com/photo-1526045478516-99145907023c') no-repeat center center/cover;
+  overflow: hidden;
+}
+
+/* Purple Overlay */
+.overlay {
+  background: rgba(75, 0, 130, 0.65);
+  height: 100vh;
+  padding: 60px 20px;
+}
+
+/* Glowing Heading */
+h1 {
+  font-size: 48px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #fff; }
+  to { text-shadow: 0 0 30px #d580ff; }
+}
+
+/* Message Styling */
+p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 22px;
+  line-height: 1.8;
+  margin-top: 30px;
+}
+
+/* Floating Hearts */
+.heart {
+  position: absolute;
+  color: #d580ff;
+  font-size: 20px;
+  animation: float 8s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh); opacity: 1; }
+  100% { transform: translateY(-10vh); opacity: 0; }
+}
+
+/* Final Line */
+.final {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<h1>For My Beautiful Anku 💜🌷</h1>
+
+<p>
+Anku, my beautiful baby girl 💜✨ tu kharach khup sundar ahes, inside and outside. 
+Tujha smile baghitla ki majha divas instantly bright hoto 🌷💖 You are not just pretty, 
+you are pure magic. Baby girl, tu mala nehmich motivate kartes ani mala strength detes 
+jevha mala weak vatat 💪💜 Tujhya support mule mi strong hoto, confident hoto. 
+My bday girl, tu majhya life chi saglyat special gift ahes 🎁💜 
+Tujhya sobat aslo ki sagla world perfect vatat. 
+Thank you for being my peace, my happiness, ani majha forever person 💜🌸✨
+and ha tu kharach khuppppp jasta bhari ahes so dont compare you with others
+  enjoy your dayy birthday gurllllll 
+</p>
+
+<div class="final">
+I Love You Forever, Anku 💜🌷✨
+</div>
+
+</div>
+
+<script>
+for (let i = 0; i < 40; i++) {
+  let heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "💜";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDelay = Math.random() * 8 + "s";
+  heart.style.fontSize = (15 + Math.random() * 20) + "px";
+  document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
